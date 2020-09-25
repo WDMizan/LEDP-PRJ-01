@@ -1,0 +1,750 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,a,p{
+    padding: 0;
+    margin: 0;
+}
+/*navigation part css start*/
+.navbar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.navbar-nav li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #121111;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 19px;
+    
+}
+.navbar-nav li a:hover{
+    color: navy;
+}
+.navbar-nav li a i{
+   font-size: 12px;
+}
+.navbar-nav .nav-item.active a{
+    color: blue;
+}  
+
+.navbar-nav li{
+    position: relative;
+}
+.navbar-nav li ul{
+    position: absolute;
+    width: 160px;
+    left: 0;
+    top: 80px;;
+    background: navy;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+}
+.navbar-nav li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 40px;
+    transition: all linear .3s;
+    
+}
+
+.navbar-nav li ul li a{
+    color: #fff;
+    font-size: 13px;
+    padding-bottom: 5px;
+    
+}
+.navbar-nav li ul li a:hover{
+    color: azure;
+   
+}
+
+button{
+    padding: 7px 25px;
+    text-decoration: none;
+    margin-left: 20px;
+    background-color: navy;
+    border-radius: 5px;
+    transition: .3s;
+}
+.sign a{
+    text-decoration: none;
+    color: #fff;
+    
+    
+}
+button:hover{
+    background-color: darkmagenta;
+    color: aliceblue;
+    transition: .3s;
+     border-radius: 5px;
+}
+/*navigation part css end*/
+/* to top css start*/
+.top_to {
+    height: 40px;
+    width: 40px;
+    background: #020031;
+    text-align: center;
+    line-height: 40px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    -webkit-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+    border-radius: 50%;
+    z-index: 999999;
+}
+.clear{
+    clear: both;
+}
+
+.top_to:hover {
+    color: #fff;
+    background-color: darkmagenta; 
+    transition: all linear .3s;
+}
+
+.top_to:hover a {
+    color: #fff;
+    transition: all linear .3s;
+}
+/* to top css end*/
+/*banner part css start*/
+.banner{
+    background: url(../image/blog-08-480x312.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 690px;
+}
+.banner_overlay{
+    background-color: rgba(17, 17, 17, 0.5);
+    padding: 199px 0px;
+}
+.banner_con{
+    text-align: center;
+}
+.banner_con h4{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+.banner_con h1{
+   color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.banner_con h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    background-color: dodgerblue;
+    padding: 15px 20px;
+    margin: 15px 254px;
+}
+
+.banner_con p{
+   color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/*banner part css end*/
+/*content part css start*/
+.content_con h5{
+    color: #111;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.content_con p{
+        color: #111;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+.content_icon img{
+       margin-top: 40px;
+    margin-left: 85px;
+}
+    
+/*content part css end*/
+/*company css start*/
+.company_con h5{
+    color: #111;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 101px;
+    color: gray;
+}
+.company_con h4{
+        color: #111;
+    font-size: 44px;
+    font-weight: bold;
+    padding-top: 29px;
+}
+
+.company_con h4 span{
+    color: blue;
+}
+.company_con p{
+    color: #111;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 15px;
+    line-height: 25px;
+    padding-bottom: 30px;
+    
+}
+.company_con button{
+    padding: 10px 30px;
+    margin-bottom: 30px;
+}
+.company_icon img{
+    margin-top: 146px;
+    margin-left: 49px;
+}
+/*company css end*/
+/*service css start*/
+.service{
+    background-color: darkgrey;
+    padding-top: 80px;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 830px;
+    
+}
+.common_head h6{
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: 3px;
+    font-weight: bold;
+
+}
+.common_head h5{
+     color: #111;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.common_head h5 span{
+    color: blue;
+    text-transform: capitalize;
+}
+.ser{
+    display: inline-flex;
+    padding-top: 30px;
+    background-color: cadetblue;
+    margin-top: 50px;
+    border: 1px solid cadetblue;
+    transition: all linear .4s;
+    margin-bottom: -18px;
+}
+.ser:hover {
+    background-color: darkmagenta;
+    border: 1px solid navy;
+    transition: all linear .4s;
+    color: aliceblue;
+}
+.service_icon i{
+    color: red;
+    font-size: 45px;
+    margin-left: 15px;
+}
+.service_con h4{
+    color: navy;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: start;
+    padding-left: 19px;
+}
+.service_con p{
+       color: navy;
+    font-size: 15px;
+    text-align: start;
+    padding-left: 19px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    transition: all linear .4s;
+}
+.service_con p:hover{
+    color: #fff;
+    transition: all linear .4s;
+}
+.service_con button{
+    margin-right: 126px;
+    margin-bottom: 32px;
+}
+    
+/*service css end*/
+/*success css start*/
+.success{
+    background-color: #fff;
+    padding-top: 40px;
+    margin-top: 60px;
+}
+.success_con{
+    padding-top: 150px;
+    
+}
+/*
+.success_con ul::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 1px;
+    background-color: darkred;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+*/
+
+.test::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 850px;
+    height: 1px;
+    background-color: darkred;
+    margin-top: 191px;
+    margin-left: 30px;
+}
+
+
+.success_con ul li{
+    position: relative;
+}
+.success_con ul li::before{
+    content: attr(data-counter);
+    position: absolute;
+    left: 0px;
+    top: -90px;
+    height: 40px;
+    width: 40px;
+    background-color: darkmagenta;
+    border: 1px solid darkmagenta;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.success_con ul li{}
+.success_con ul{}
+.success_con ul li strong{
+   font-size: 26px;
+}
+.success_con ul li h5{
+   padding-top: 10px;
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+.success_con ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+/*success css end*/
+/*proud css start*/
+.Proud{
+    padding-top: 80px;
+    background-color: darkgrey;
+/*    margin-top: 60px;*/
+}
+.proud_con{
+     padding-top: 90px;
+}
+.proud_con h4{
+         color: #111;
+    font-size: 40px;
+    font-weight: bold;
+}
+.proud_con h5{
+         color: #111;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 33px;
+    color: gray;
+    padding-bottom: 10px;
+}
+.proud_con p{
+    color: #111;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 15px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.proud_icon img{
+    margin-top: 110px;
+}
+/*proud css end*/
+/*it css start*/
+.it{
+    background-color: rgba(17, 17, 17, 0.83);
+    margin-top: 80px;
+/*    margin-bottom: 40px;*/
+}
+.it_con h2{
+    padding-top: 159px;
+    padding-bottom: 159px;
+    color: #fff;
+    font-size: 45px;
+
+}
+.it_con h2 span{
+    color: orangered;
+}
+.it_icon{
+       margin-top: 208px;
+    margin-left: 2px;
+    padding: 1px 42px;
+    
+}
+.it_icon a{
+    
+          color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    border: 1px solid green;
+    margin: 5px 4px;
+    padding: 11px 32px;
+    background-color: orange;
+    transition: all linear .3s;
+}
+.it_icon a:hover {
+    background-color: orangered;
+    transition: all linear .3s;
+    border: 1px solid orangered;
+}
+/*it css end*/
+/*pricing css start*/
+.card{
+    background-color: rgba(95, 158, 160, 0.43);
+    margin-top: 30px;
+    margin-bottom: 70px;
+    transition: all linear .3s;
+}
+.card:hover{
+    background-color: darkgray;
+    margin-bottom: 10px;
+   
+    transition: all linear .3s;
+}
+.pricing{
+    padding-top: 80px;
+}
+.pricing_icon h6{
+    padding-top: 41px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    padding-bottom: 13px;
+    letter-spacing: 4px;
+    padding-left: 5px;
+}
+.pricing_icon i{
+    padding: 30px 25px;
+    margin: 29px 108px;
+    border-radius: 50%;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    color: blue;
+    font-size: 67px;
+    background-color: rgba(128, 128, 128, 0.23);
+    
+}
+.pricing_con h4{
+     padding-top: -2px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    padding-right: 11px;
+}
+.pricing_con a{
+    text-decoration: none;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid;
+    margin-left: 103px;
+    padding: 10px 29px;
+    background-color: navy;
+    color: #fff;
+    font-weight: 600;
+    transition: .4s;
+    border-radius: 5px;
+}
+.pricing_con a:hover{
+    background-color: darkmagenta;
+    color: #fff;
+    transition: .4s;
+    border-radius: 5px;
+}
+.pricing_con{
+   
+}
+.pricing_con ul{
+    padding-left: 70px;
+    padding-top: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+.pricing_con ul li::before{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: navy;
+    display: inline-block;
+    margin-right: 10px;
+}
+/*pricing css end*/
+/*contact css start*/
+.contact{
+    background-color: navy;
+    padding-bottom: 80px;
+    padding-top: 10px;
+}
+.contact_con h4{
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 40px;
+    line-height: 56px;
+    color: #ffffff;
+    padding-top: 80px;
+    padding-left: 95px;
+}
+.contact_con i{
+   font-weight: 900;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFBB00;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-left: 16px;
+}
+.contact_con p{
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 37px;
+    color: #ffffff;
+    padding-top: 25px;
+    padding-left: 29px;
+    font-style: normal;
+}
+.contact_connect{
+    display: inline-flex;
+    padding-top: 30px;
+  
+}
+.contact_connect a i{
+    font-size: 35px;
+    padding-top: 30px;
+}
+.contact_icon h6{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 27px;
+    color: #ffffff;
+    padding-top: 13px;
+    padding-left: 20px;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contact_icon h5{
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 34px;
+    line-height: 40px;
+    color: #FFBB00;
+    padding-top: 15px;
+    padding-left: 16px;
+    font-style: normal;
+    letter-spacing: 2px;
+    
+}
+.contact-from{
+    background-color: #ffffff;
+    margin-top: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: navy;
+}
+.form-row validationServer01{
+    font-size: 50px;
+}
+/*contact css end*/
+/*brand css start*/
+.brand{
+    background-color: #fff;
+}
+.brand_logo{
+    padding-top: 50px;
+    padding-bottom: 50px;
+     margin-top: 40px;
+    margin-bottom: 40px;
+    transition: all linear.3s;
+    text-align: center;
+    border-radius: 5px;
+}
+.brand_logo img{
+    width: 70%;
+   
+}
+.brand_logo:hover{
+    background-color: navy;
+    transition: all linear.3s;
+}
+.titu img{
+    width: 40%;
+}
+.mizu img{
+    width: 45%;
+}
+.mizan img{
+    width: 70%;
+    padding-top: 5px;
+}
+.omi img{
+    width: 90%;
+    padding-top: 25px;
+}
+.azarul img{
+    width: 90%;
+    padding-top: 25px;
+}
+.ami img{
+    padding-top: 15px;
+}
+/*brand css end*/
+/*fotter css start*/
+.footer{
+    background-color: gray;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.footer_logo img{
+   padding-bottom: 20px;
+}
+.footer_con p{
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #696969;
+    padding-top: 10px;
+    font-style: normal;
+   
+}
+.footer_con h6{
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #d2a98e;
+    font-style: normal;
+     padding-top: 10px;
+}
+.footer_con h5{
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #333333;
+    font-style: normal;
+     padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer_con a{
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #d2a98e;
+    font-style: normal;
+     padding-top: 20px;
+    padding-bottom: 60px;
+    color: blue;
+}
+.footer_mizu H6{
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    color: #333333;
+    font-style: normal;
+    padding-bottom: 10px;
+}
+.footer_mizu P{
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #333333;
+    font-style: normal;
+    padding-top: 10PX;
+}
+.footer_im{
+    padding-top: 50px;
+    
+}
+.footer_im a{
+    background-color: aqua;
+}
+.footer_im a:hover{
+    background-color: darkmagenta;
+}
+.footer_im a img{
+    padding-top: 3px;
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+.footer_main{
+    background-color: cadetblue;
+}
+.footer_content{
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #333333;
+    font-style: normal;
+    padding-top: 10PX;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+/*fotter css end*/
